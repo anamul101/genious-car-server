@@ -41,7 +41,7 @@ async function run(){
         });
         app.get('/services', async(req,res)=>{
             const search = req.query.search;
-            const query={};
+            let query={};
             if(search.length){
                 query={
                     $text:{
